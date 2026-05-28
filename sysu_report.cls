@@ -68,6 +68,7 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{subcaption}
 % 图表标题设置
 \DeclareCaptionFont{mylabelfont}{\hei\zihao{-4}}
 \captionsetup[figure]{labelformat=default, labelsep=quad, name={图}, font=mylabelfont}
@@ -138,7 +139,7 @@
 % -------参考文献------- %
 \usepackage[numbers]{natbib}
 \bibsep=0pt
-\newcommand{\myrefstyle}{\centerline{\hei\bfseries\zihao{-2} 参考文献}}
+\newcommand{\myrefstyle}{\centerline{\hei\bfseries\zihao{-2} 参考文献}\vspace{-2em}}
 \renewcommand{\refname}{\myrefstyle}
 \renewcommand{\bibname}{\myrefstyle}
 % -------代码相关------- %
@@ -154,20 +155,20 @@
 % 代码高亮
 \usepackage{listings}
 \lstset{
-  backgroundcolor=\color{codeBg}, % 灰底
-  numbers=left,                   % 左侧显示行号
-  numbersep=5pt,                  % 行号距离
-  numberstyle=\tiny\color{gray},  % 行号样式
-  stepnumber=1,                   % 每行都显示行号
-  breaklines=true,                % 自动换行
-  frame=single,                   % 黑框
-  rulecolor=\color{black!20},     % 边框颜色
-  columns=fullflexible,           % 按正常字体间距排版
-  keepspaces=true,                % 保持代码中的空格
-  showspaces=false,               % 不显示空格符号
-  showstringspaces=false,         % 不显示空格占位符
-  showtabs=false,                 % 不显示制表符
-  basicstyle=\ttfamily\small      % 基础字体
+  backgroundcolor=\color{codeBg},   % 灰底
+  numbers=left,                     % 左侧显示行号
+  numbersep=5pt,                    % 行号距离
+  numberstyle=\tiny\color{gray},    % 行号样式
+  stepnumber=1,                     % 每行都显示行号
+  breaklines=true,                  % 自动换行
+  frame=single,                     % 黑框
+  rulecolor=\color{black!20},       % 边框颜色
+  columns=fullflexible,             % 按正常字体间距排版
+  keepspaces=true,                  % 保持代码中的空格
+  showspaces=false,                 % 不显示空格符号
+  showstringspaces=false,           % 不显示空格占位符
+  showtabs=false,                   % 不显示制表符
+  basicstyle=\ttfamily\small,       % 基础字体
   keywordstyle=\color{keywordcolor}\bfseries,
   commentstyle=\color{commentcolor}\itshape,
   stringstyle=\color{stringcolor}
