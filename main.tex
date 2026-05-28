@@ -380,6 +380,24 @@ grid on;
 模板使用 \texttt{appendix} 宏包，通过 \verb|\begin{appendices}| 进入附录模式。附录中的章节自动以字母编号（附录 A、附录 B……），
 且图表公式的编号也会相应切换。\par
 附录也和正文一样支持标题层级、数学公式、图表等内容，适合放置实验原始数据记录表、仿真代码等补充材料。
+\subsection{参考文献}
+模板使用 \texttt{natbib} 宏包管理参考文献（\texttt{numbers} 模式），参考文献条目存放在 \texttt{cite.bib} 文件中。
+自定义了上标引用，引用命令包括：
+
+\begin{itemize}
+    \item \verb|\cite{key}| —— 带括号引用，如 \cite{razavi2005design}
+    \item \verb|\citenum{key}| —— 纯数字引用，如 \citenum{sze2021physics}
+    \item \verb|\citet{key}| —— 文本内引用，如 \citet{2003A}
+    \item \verb|\upcite{key}| —— 纯括号上标引用，如 \upcite{华明清20070}
+    \item \verb|\upcitenum{key}| —— 纯数字上标引用，如 \upcitenum{razavi2005design}
+    \item \verb|\upcitet{key}| —— 文本内引用，如 \upcitet{2003A}
+\end{itemize}\par
+
+参考文献列表标题使用黑体二号居中，条目间行距已压缩（\verb|\bibsep=0pt|）。
+在正文末尾使用 \verb|\bibliographystyle{unsrtnat}| 选择引文格式，再用\\ \verb|\bibliography{cite}| 载入 bib 文件即可自动生成参考文献列表。\par
+至此，本教程已覆盖模板的全部核心功能，包括封面设置、标题层级、字体切换、数理公式与定理环境、图表插入、代码高亮
+（通用、Arduino、MATLAB）、列表脚注、附录以及参考文献引用。更多 \LaTeX{} 进阶用法，请自行学习。
+% --------------附录-------------- %
 \begin{appendices}
 \section{实验原始数据记录表}
 以下为实验过程中记录的原始数据（部分摘录），供参考核对。
@@ -418,27 +436,8 @@ grid on;
 \end{lstlisting}
 
 \end{appendices}
-
-\subsection{参考文献}
-模板使用 \texttt{natbib} 宏包管理参考文献（\texttt{numbers} 模式），参考文献条目存放在 \texttt{cite.bib} 文件中。
-自定义了上标引用，引用命令包括：
-
-\begin{itemize}
-    \item \verb|\cite{key}| —— 带括号引用，如 \cite{razavi2001design}
-    \item \verb|\citenum{key}| —— 纯数字引用，如 \citenum{sze2006physics}
-    \item \verb|\citet{key}| —— 文本内引用，如 \citet{syousefi2014}
-    \item \verb|\upcite{key}| —— 纯括号上标引用，如 \upcite{liu2020}
-    \item \verb|\upcitenum{key}| —— 纯数字上标引用，如 \upcitenum{razavi2001design}
-    \item \verb|\upcitet{key}| —— 文本内引用，如 \upcitet{syousefi2014}
-\end{itemize}\par
-
-参考文献列表标题使用黑体二号居中，条目间行距已压缩（\verb|\bibsep=0pt|）。
-在正文末尾使用 \verb|\bibliographystyle{unsrtnat}| 选择引文格式，再用\\ \verb|\bibliography{cite}| 载入 bib 文件即可自动生成参考文献列表：
-
+% --------------参考文献-------------- %
 \bibliographystyle{unsrtnat}
 \bibliography{cite}
-\bigskip\par
-至此，本教程已覆盖模板的全部核心功能，包括封面设置、标题层级、字体切换、数理公式与定理环境、图表插入、代码高亮
-（通用、Arduino、MATLAB）、列表脚注、附录以及参考文献引用。更多 \LaTeX{} 进阶用法，请自行学习。
 
 \end{document}
