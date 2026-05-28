@@ -420,12 +420,16 @@ grid on;
 \end{appendices}
 
 \subsection{参考文献}
-模板使用 \texttt{natbib} 宏包管理参考文献（\texttt{numbers} 模式），参考文献条目存放在 \texttt{cite.bib} 文件中。引用命令包括：
+模板使用 \texttt{natbib} 宏包管理参考文献（\texttt{numbers} 模式），参考文献条目存放在 \texttt{cite.bib} 文件中。
+自定义了上标引用，引用命令包括：
 
 \begin{itemize}
-    \item \verb|\cite{key}| —— 普通引用，如 \cite{sze2006physics}
-    \item \verb|\citep{key}| —— 带括号引用，如 \citep{razavi2001design}
+    \item \verb|\cite{key}| —— 带括号引用，如 \cite{razavi2001design}
+    \item \verb|\citenum{key}| —— 纯数字引用，如 \citenum{sze2006physics}
     \item \verb|\citet{key}| —— 文本内引用，如 \citet{syousefi2014}
+    \item \verb|\upcite{key}| —— 纯括号上标引用，如 \upcite{liu2020}
+    \item \verb|\upcitenum{key}| —— 纯数字上标引用，如 \upcitenum{razavi2001design}
+    \item \verb|\upcitet{key}| —— 文本内引用，如 \upcitet{syousefi2014}
 \end{itemize}\par
 
 参考文献列表标题使用黑体二号居中，条目间行距已压缩（\verb|\bibsep=0pt|）。

@@ -234,3 +234,10 @@
 % -------具体引用样式------- %
 % 开启书签，内部链接颜色设置为道奇蓝，引用颜色设置为道奇蓝，URL颜色设置为道奇蓝
 \usepackage[bookmarks=true,colorlinks=true,linkcolor=myblue,citecolor=myblue,urlcolor=myblue]{hyperref}
+\setcitestyle{open={\textcolor{myblue}{[}},close={\textcolor{myblue}{]}}}
+\newcommand{\upcitenum}[1]{\textsuperscript{\citenum{#1}}}
+\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
+\newcommand{\upcitet}[1]{% 这个注释是为了去除一个空格
+    \begin{NoHyper}\citeauthor{#1}\end{NoHyper}
+    \upcite{#1}
+}
