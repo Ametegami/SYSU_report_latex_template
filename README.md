@@ -24,7 +24,7 @@ latexmk -xelatex main.tex
 ├── main.tex          # 使用教程 + 示例报告（也是主入口）
 ├── cite.bib          # 参考文献（GB/T 7714 格式，百度学术可生成）
 ├── fig/
-│   ├── SYSU_logo.pdf           # 封面校徽
+│   ├── SYSU_logo.pdf           # 封面校名
 │   ├── example_circuit.png     # 示例图片
 │   ├── example_dc.bmp          # 示例图片
 │   └── example_ro.bmp          # 示例图片
@@ -60,7 +60,7 @@ latexmk -xelatex main.tex
 
 | 功能 | 说明 |
 |------|------|
-| 封面 | 校徽 + 标题 + 个人信息 + 日期，`\maketitle` 自动生成 |
+| 封面 | 校名 + 标题 + 个人信息 + 日期，`\maketitle` 自动生成 |
 | 目录 | `\tableofcontents`，显示 4 级标题，含引导点线 |
 | 四级标题 | `\section` / `\subsection` / `\subsubsection` / `\paragraph` |
 | 中文字体 | `\song` 宋体 / `\kai` 楷体 / `\hei` 黑体 / `\fang` 仿宋 |
