@@ -397,6 +397,9 @@ grid on;
 在正文末尾使用 \verb|\bibliographystyle{unsrtnat}| 选择引文格式，再用\\ \verb|\bibliography{cite}| 载入 bib 文件即可自动生成参考文献列表。\par
 至此，本教程已覆盖模板的全部核心功能，包括封面设置、标题层级、字体切换、数理公式与定理环境、图表插入、代码高亮
 （通用、Arduino、MATLAB）、列表脚注、附录以及参考文献引用。更多 \LaTeX{} 进阶用法，请自行学习。
+% --------------参考文献-------------- %
+\bibliographystyle{unsrtnat}
+\bibliography{cite}
 % --------------附录-------------- %
 \begin{appendices}
 \section{实验原始数据记录表}
@@ -436,8 +439,5 @@ grid on;
 \end{lstlisting}
 
 \end{appendices}
-% --------------参考文献-------------- %
-\bibliographystyle{unsrtnat}
-\bibliography{cite}
 
 \end{document}

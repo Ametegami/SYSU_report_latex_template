@@ -1,6 +1,6 @@
 # 中山大学实验报告 LaTeX 模板
 
-基于 `ctexart` 的校内实验报告模板，使用 XeLaTeX 编译，已配置好封面、目录、字体、页眉页脚、定理环境、图表编号、代码高亮、附录、参考文献等全套样式，开箱即用。
+基于 `ctexart` 的实验报告模板，使用 XeLaTeX 编译，已配置好封面、目录、字体、页眉页脚、定理环境、图表编号、代码高亮、附录、参考文献等全套样式，开箱即用。
 
 ## 快速开始
 
@@ -54,7 +54,7 @@ latexmk -xelatex main.tex
 
 ### 3. 管理参考文献
 
-将百度学术生成的 GB/T 7714 BibTeX 条目粘贴到 `cite.bib`，在正文中用 `\cite{key}` 引用。
+将谷歌学术、百度学术等生成的 GB/T 7714 BibTeX 条目粘贴到 `cite.bib`，在正文中用 `\cite{key}` 引用。
 
 ## 功能速览
 
@@ -158,7 +158,7 @@ latexmk -xelatex main.tex
 答：确保使用 `latexmk -xelatex` 编译（它会自动跑 bibtex）。手动编译的话需要执行 `xelatex → bibtex → xelatex → xelatex`。
 
 **Q: 如何获取 GB/T 7714 格式的 BibTeX 条目？**
-答：百度学术搜索文献 → 点击"引用" → 选择"BibTeX" → 复制粘贴到 `cite.bib`。
+答：谷歌或百度学术搜索文献 → 点击"引用" → 选择"BibTeX" → 复制粘贴到 `cite.bib`。
 
 ## 许可
 
